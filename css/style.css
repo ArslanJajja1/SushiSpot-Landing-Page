@@ -5,10 +5,10 @@
 @import url("sections/header.css");
 @import url("sections/hero.css");
 @import url("sections/about.css");
-/* @import url("sections/popular.css");
-@import url("sections/trending.css");
-@import url("sections/subscribe.css");
-@import url("sections/footer.css"); */
+@import url("sections/popular.css");
+/* @import url("sections/trending.css"); */
+/* @import url("sections/subscribe.css"); */
+/* @import url("sections/footer.css"); */
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
@@ -234,4 +234,17 @@ a {
   }
 }
 /* END: hero media queries */
+
+/* START: popular media queries */
+@media screen and (max-width: 550px) {
+  .popular-foods {
+    padding: 64px 32px;
+  }
+
+  .popular-foods__card,
+  .popular-foods__card.active-card {
+    min-width: 100%;
+  }
+}
+/* END: popular media queries */
 

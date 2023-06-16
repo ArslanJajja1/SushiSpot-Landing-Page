@@ -6,7 +6,7 @@
 @import url("sections/hero.css");
 @import url("sections/about.css");
 @import url("sections/popular.css");
-/* @import url("sections/trending.css"); */
+@import url("sections/trending.css");
 /* @import url("sections/subscribe.css"); */
 /* @import url("sections/footer.css"); */
 
@@ -248,3 +248,40 @@ a {
 }
 /* END: popular media queries */
 
+
+
+/* START: trending media queries */
+@media screen and (max-width: 1024px) {
+  .trending-sushi {
+    flex-direction: column;
+  }
+
+  .trending-drink {
+    flex-direction: column-reverse;
+  }
+
+  .trending__image {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .trending__discover {
+    display: none;
+  }
+
+  .trending__arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .trending__image img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .trending__content {
+    padding: 32px;
+  }
+}
+/* END: trending media queries */

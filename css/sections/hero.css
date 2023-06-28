@@ -11,7 +11,7 @@
     z-index: 5;
 }
 .hero-image img{
-    width: 120%;
+    width: 115%;
     height: 100%;
     object-fit: contain;
 }
